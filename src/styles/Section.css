@@ -1,0 +1,12 @@
+.section-item {
+  display: flex;
+  justify-content: space-between;
+}
+.section-items {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.section {
+  padding: 15px;
+}

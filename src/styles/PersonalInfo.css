@@ -1,0 +1,8 @@
+.personal-information {
+  padding: 16px;
+  justify-items: center;
+}
+.contact-info {
+  display: flex;
+  gap: 16px;
+}

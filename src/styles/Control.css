@@ -1,0 +1,16 @@
+.control-card {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 16px;
+}
+.control-form {
+  display: flex;
+  flex-direction: column;
+}
+.control-panel {
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
