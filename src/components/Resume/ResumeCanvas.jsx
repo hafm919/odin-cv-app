@@ -5,7 +5,7 @@ import PersonalDetails from "./PersonalDetails";
 
 function ResumeCanvas({ personalInfo, educationList, experienceList }) {
   return (
-    <div className="canvas">
+    <div id="resume" className="canvas">
       <PersonalDetails personalInfo={personalInfo} />
       <EducationSection educationList={educationList} />
       <ExperienceSection experienceList={experienceList}></ExperienceSection>

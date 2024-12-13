@@ -5,11 +5,10 @@ function PersonalDetails({ personalInfo }) {
     <div className="personal-information">
       <h1>{personalInfo.fullName}</h1>
       <div className="contact-info">
-        <span>
-          <h3>{personalInfo.phoneNumber} </h3>
-        </span>
-
-        <h3> {personalInfo.emailID}</h3>
+        <p>
+          {personalInfo.phoneNumber} |{" "}
+          <a href={"mailto:" + personalInfo.emailID}>{personalInfo.emailID}</a>
+        </p>
       </div>
     </div>
   );

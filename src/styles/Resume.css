@@ -1,3 +1,6 @@
+:root {
+  --resume-font: "Times New Roman", Times, serif;
+}
 .canvas {
   width: 21cm;
   height: 29.7cm;
@@ -6,4 +9,5 @@
   background-color: white;
   display: flex;
   flex-direction: column;
+  padding: 32px;
 }

@@ -5,7 +5,7 @@ function ExperienceSection({ experienceList }) {
     <>
       {experienceList.length > 0 && (
         <div className="section">
-          <h1>Experience</h1>
+          <h1>EXPERIENCE</h1>
           <hr />
           <div className="section-items">
             {experienceList.map((experience) => (
@@ -15,7 +15,6 @@ function ExperienceSection({ experienceList }) {
               ></ExperienceSectionItem>
             ))}
           </div>
-          <hr></hr>
         </div>
       )}
     </>

@@ -6,7 +6,7 @@ function EducationSection({ educationList }) {
     <>
       {educationList.length > 0 && (
         <div className="section">
-          <h1>Education</h1>
+          <h1>EDUCATION</h1>
           <hr />
           {educationList.map((education) => (
             <EducationSectionItem
@@ -14,7 +14,6 @@ function EducationSection({ educationList }) {
               education={education}
             ></EducationSectionItem>
           ))}
-          <hr></hr>
         </div>
       )}
     </>

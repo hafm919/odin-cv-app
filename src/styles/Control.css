@@ -1,16 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
 .control-card {
+  font-family: "Raleway", serif;
   display: flex;
   flex-direction: column;
   background-color: white;
   padding: 16px;
+  border-radius: 5px;
+}
+.control-card h2 {
+  padding-bottom: 5px;
 }
 .control-form {
   display: flex;
   flex-direction: column;
+  gap: 15px;
 }
 .control-panel {
   padding: 32px;
   display: flex;
   flex-direction: column;
   gap: 36px;
+}
+
+.control-card input {
+  padding: 0.625rem;
+  border-radius: 0.2rem;
+  background-color: #f3f3f3;
+  border: none;
+  width: 90%;
+  display: block;
+}
+label {
+  font-weight: 600;
+}
+.control-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.add-icon {
+  color: white;
+  font-size: 16px;
+  background-color: black;
+  width: 32px;
+  height: 32px;
+  border-radius: 100%;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+}
+textarea {
+  padding: 0.625rem;
+  border-radius: 0.2rem;
+  background-color: #f3f3f3;
+  border: none;
+  width: 90%;
+  display: block;
+}
+
+.save {
+  min-height: 20px;
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+}
+button {
+  transition: transform 0.2s;
+}
+button:hover {
+  transform: scale(1.01);
+}
+.cancel {
+  min-height: 20px;
+  border: 1px solid black;
+  border-radius: 10px;
 }

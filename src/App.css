@@ -1,0 +1,15 @@
+.clear,
+.print {
+  aspect-ratio: 1.5;
+  flex-grow: 1;
+  border-radius: 5px;
+  font-size: large;
+}
+
+.clear {
+  background-color: #cc3e3e;
+  color: white;
+}
+.print {
+  font-size: xx-large;
+}

@@ -1,3 +1,6 @@
+:root {
+  --name-size: 32px;
+}
 .personal-information {
   padding: 16px;
   justify-items: center;
@@ -5,4 +8,7 @@
 .contact-info {
   display: flex;
   gap: 16px;
+}
+.personal-information h1 {
+  font-size: var(--name-size);
 }
