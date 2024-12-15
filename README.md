@@ -49,11 +49,11 @@ This project was an opportunity to:
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/yourusername/cv-generator.git
+   git clone https://github.com/hafm919/odin-cv-app.git
    ```
 2. Navigate to the project directory:
    ```bash
-   cd cv-generator
+   cd odin-cv-app
    ```
 3. Install dependencies:
    ```bash
