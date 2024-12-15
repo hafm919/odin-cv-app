@@ -20,6 +20,17 @@ function App() {
     setExperienceList([]);
   }
 
+  function deleteItem(e, sectionType) {
+    const itemKey = e.target.id;
+    const sectionList =
+      sectionType === "education" ? educationList : experienceList;
+    const setSectionList =
+      sectionType === "education" ? setEducationList : setExperienceList;
+
+    const newSectionList = sectionList.filter((item) => item.key != itemKey);
+    setSectionList(newSectionList);
+  }
+
   function print() {
     let printContents = document.getElementById("resume").innerHTML;
     let originalContents = document.body.innerHTML;
@@ -59,11 +70,13 @@ function App() {
           addToList={handleNewEducation}
           list={educationList}
           sectionType={"education"}
+          deleteItem={deleteItem}
         ></SectionDetailsControl>
         <SectionDetailsControl
           addToList={handleNewExperience}
           list={experienceList}
           sectionType={"experience"}
+          deleteItem={deleteItem}
         ></SectionDetailsControl>
       </div>
       <ResumeCanvas

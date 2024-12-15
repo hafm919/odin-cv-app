@@ -33,3 +33,16 @@ li {
   padding-left: 10px;
   list-style-position: inside;
 }
+.section-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.section-list-item {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f3f3f3;
+  padding: 10px;
+  border-radius: 10px;
+}

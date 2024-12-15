@@ -4,7 +4,7 @@
 }
 
 body {
-  background-color: #dfdfdf;
+  background-image: url("../assets/45degreee_fabric.webp");
 }
 #root {
   display: flex;

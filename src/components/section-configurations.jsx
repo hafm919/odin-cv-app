@@ -1,6 +1,7 @@
 const sectionConfig = {
   education: {
     title: "EDUCATION",
+    icon: "fa fa-graduation-cap",
     inputs: [
       {
         key: "edu-school",
@@ -48,6 +49,7 @@ const sectionConfig = {
   },
   experience: {
     title: "EXPERIENCE",
+    icon: "fa fa-briefcase",
     inputs: [
       {
         key: "exp-company",

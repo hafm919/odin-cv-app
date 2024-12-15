@@ -3,9 +3,14 @@ function Input({ type, label, placeholder, name }) {
     <div>
       <label>{label}</label>
       {type === "textarea" ? (
-        <textarea name={name} placeholder={placeholder}></textarea>
+        <textarea name={name} placeholder={placeholder} required></textarea>
       ) : (
-        <input type={type} name={name} placeholder={placeholder}></input>
+        <input
+          type={type}
+          name={name}
+          placeholder={placeholder}
+          required
+        ></input>
       )}
     </div>
   );

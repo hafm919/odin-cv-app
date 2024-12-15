@@ -1,11 +1,18 @@
-function SectionList({ list }) {
+function SectionList({ list, sectionType, deleteItem }) {
   console.log(list);
   return (
-    <ul>
+    <div className="section-list">
       {list.map((item) => (
-        <li key={item.key}>{item.displayName}</li>
+        <div key={item.key} className="section-list-item">
+          {item.displayName}
+          <i
+            className="fa fa-trash"
+            id={item.key}
+            onClick={(e) => deleteItem(e, sectionType)}
+          ></i>
+        </div>
       ))}
-    </ul>
+    </div>
   );
 }
 export default SectionList;

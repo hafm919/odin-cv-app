@@ -2,8 +2,9 @@ import AddSectionDetails from "./AddSectionDetails";
 import sectionConfig from "../section-configurations";
 import SectionList from "./SectionList";
 import { useState } from "react";
-function SectionDetailsControl({ addToList, list, sectionType }) {
+function SectionDetailsControl({ addToList, list, sectionType, deleteItem }) {
   const title = sectionConfig[sectionType].title;
+  const icon = sectionConfig[sectionType].icon;
   const [addMode, setAddMode] = useState(false);
   function toggleAddMode() {
     setAddMode(!addMode);
@@ -11,7 +12,9 @@ function SectionDetailsControl({ addToList, list, sectionType }) {
   return (
     <div className="control-card">
       <div className="control-header">
-        <h2>{title}</h2>
+        <h2>
+          <i className={icon}></i> {title}
+        </h2>
         {!addMode && (
           <button
             className="add-icon"
@@ -31,7 +34,11 @@ function SectionDetailsControl({ addToList, list, sectionType }) {
           sectionType={sectionType}
         ></AddSectionDetails>
       ) : (
-        <SectionList list={list}></SectionList>
+        <SectionList
+          list={list}
+          sectionType={sectionType}
+          deleteItem={deleteItem}
+        ></SectionList>
       )}
     </div>
   );

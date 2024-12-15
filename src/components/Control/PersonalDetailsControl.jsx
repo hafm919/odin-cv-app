@@ -2,7 +2,9 @@ import "../../styles/Control.css";
 function PersonalDetailsControl({ updateInfo }) {
   return (
     <div className="control-card">
-      <h2>Personal Information</h2>
+      <h2>
+        <i className="fa fa-user"></i> Personal
+      </h2>
       <form className="control-form">
         <div>
           <label>Full Name</label>
